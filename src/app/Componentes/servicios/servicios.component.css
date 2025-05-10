@@ -1,0 +1,554 @@
+article {
+  width: 100%;
+  min-height: 120vh;
+  background-color: var(--background-color);
+  display: flex;
+
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 50px;
+}
+.contenedor {
+  width: 100%;
+  height: 100%;
+  background-color: #75bec3;
+}
+.fondo {
+  position: absolute;
+  left: -200px;
+  height: 120vh;
+  bottom: 0;
+}
+.fondo img {
+  height: 120vh;
+}
+
+.fondoAbajo {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  /*height: 120vh;
+    */
+}
+.primero {
+  width: 100%;
+  display: flex;
+  z-index: 999;
+  justify-content: flex-start;
+}
+
+.cardCafe {
+  position: relative;
+  width: 250px;
+  height: 270px;
+  background-color: #e76626; /* Color naranja */
+  border-radius: 15px;
+  box-shadow: 20px 20px 0px black; /* Sombra negra desplazada */
+  text-align: left;
+  margin-left: 100px;
+}
+.cardCafe-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.cardCafe-content h2 {
+  font-family: var(--font-family-prompt);
+  font-weight: var(--prompt-extrabold);
+  font-size: 60px;
+  line-height: 1;
+  color: black;
+  margin: 0;
+}
+
+.btn-contacto {
+  font-family: var(--font-family-prompt);
+  font-weight: var(--prompt-medium);
+  background-color: #a02a64; /* Color morado */
+  color: white;
+  font-size: 18px;
+
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.nuestrosServicios {
+  width: 72%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.textoServicio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.textoServicio h2 {
+  font-family: var(--font-family-prompt);
+  font-weight: var(--prompt-bold);
+  text-align: center;
+  font-size: 80px;
+  margin: 0;
+  width: 100%;
+  letter-spacing: 2px;
+}
+.textoServicio p {
+  font-family: var(--font-family-prompt);
+  font-weight: var(--prompt-light);
+  color: white;
+  font-size: 25px;
+  margin: 0;
+  width: 62%;
+  text-align: left;
+}
+/***Card Servicios**/
+.serviciosCards {
+  width: 100%;
+  display: flex;
+  margin-top: 150px;
+  justify-content: space-around;
+}
+.medios-card {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding-top: 25px;
+
+  text-align: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.icon-container {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.icon-container .imagen1 {
+  margin-top: 20px;
+  width: 80px;
+}
+.imagen2 {
+  margin-top: 30px;
+  max-height: 80px;
+  width: 130px;
+}
+.imagen3 {
+  height: 90px;
+  width: 90px;
+  margin-top: 20px;
+}
+.content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content h2 {
+  font-family: var(--font-family-prompt);
+  font-weight: var(--prompt-extrabold);
+  font-size: 25px;
+
+  color: #ffc72c; /* Color amarillo */
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.content p {
+  width: 80%;
+  font-family: var(--font-family-prompt);
+  font-weight: var(--prompt-light);
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.content strong {
+  font-weight: bold;
+}
+
+.segundo {
+  width: 100%;
+  display: flex;
+  height: 100%;
+
+  margin-top: 380px;
+  z-index: 999;
+}
+.segundo .abajo {
+  width: 500px;
+  height: 99%;
+  z-index: 999;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.diferencias {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.diferencias .titulo {
+  font-family: var(--font-family-prompt);
+  font-weight: var(--prompt-extrabold);
+
+  font-size: 45px;
+  margin: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.diferencias .cardsDif {
+  width: 100%;
+  display: flex;
+  margin: 5px 0;
+  justify-content: space-around;
+}
+
+.cardTransparemte {
+  width: 350px;
+  height: 200px;
+
+  margin: 0 20px;
+  opacity: 1;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.cardDif {
+  width: 350px;
+  height: 200px;
+  background-color: #75bec3 ;
+  margin: 0 20px;
+  opacity: 1;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.cardDif:hover{
+  background-color: black;
+  color: white;
+  .imagenDif img {
+    filter: brightness(0) saturate(100%) invert(63%) sepia(17%) saturate(470%) hue-rotate(139deg) brightness(91%) contrast(84%);
+    
+  }
+}
+
+.imagenDif {
+  margin-top: 5px;
+}
+.imagenDif img {
+  height: 60px;
+}
+.textosDif {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.subTituloDif {
+  font-family: var(--font-family-prompt);
+  font-weight: var(--prompt-medium);
+
+  font-size: 10px;
+  margin: 0;
+  text-align: center;
+}
+.tituloDif {
+  font-family: var(--font-family-prompt);
+  font-weight: var(--prompt-extrabold);
+
+  font-size: 18px;
+  margin: 0;
+ 
+  align-items: center;
+  line-height: 1;
+  text-align: center;
+}
+.contenidoDif {
+  font-family: var(--font-family-prompt);
+  font-weight: var(--prompt-light);
+
+  font-size: 15px;
+  margin-top: 5px;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) and (max-width: 800px) {
+ 
+
+  .fondoAbajo {
+    visibility: hidden;
+  }
+  
+
+  .cardCafe {
+    margin-left: 10px;
+    height: 160px;
+    box-shadow: -20px 20px 0px black;
+    width: 130px;
+  }
+  .cardCafe-content h2 {
+    font-size: 25px;
+  }
+
+  .btn-contacto {
+    font-size: 10px;
+  }
+  .textoServicio h2 {
+    font-size: 50px;
+  }
+  .textoServicio p {
+    width: 90%;
+  
+  }
+  .nuestrosServicios{
+    height: max-content;
+    
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+   
+  }
+  
+  .serviciosCards {
+    display: flex;
+    
+    width: 100%;
+    
+  }
+  .medios-card {
+    width: 100%;
+  }
+  .icon-container {
+  
+    width: 150px;
+    right: 0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-container .imagen1 {
+    padding: 0;
+    margin: 0;
+    width: 60px;
+  }
+  .icon-container .imagen2 {
+    padding: 0;
+    margin: 0;
+    width: 90px;
+  }
+  .icon-container .imagen3 {
+    padding: 0;
+    margin: 0;
+    width: 80px;
+    height: 80px;
+  }
+  .serviciosCards {
+    margin-top: 150px;
+  }
+  .medios-card {
+    width: 200px;
+    height: 250px;
+    margin: 10px 0;
+  }
+  .content h2 {
+    font-size: 20px;
+  }
+  .content p {
+    width: 95%;
+    font-size: 15px;
+  }
+  .primero {
+    margin-bottom: 10px;
+  }
+  .segundo{
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  .diferencias {
+    width: 98%;
+   
+  }
+
+  .diferencias .titulo {
+    font-size: 28px;
+    text-align: center;
+  }
+  .textosDif .tituloDif {
+    font-size: 20px;
+  }
+  .contenidoDif {
+    font-size: 15px;
+  }
+  .cardDif,
+  .cardTransparemte {
+    width: 45%;
+    height: 200px;
+    margin: 2px 2px;
+  }
+  .imagenDif img {
+    height: 40px;
+  }
+  .cardsDif {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+  .fondo {
+    left: -310px;
+    height: 100vh;
+    top:20px;
+  }
+
+}
+@media only screen and (max-width: 480px) {
+  .fondoAbajo {
+    visibility: hidden;
+  }
+  
+
+  .cardCafe {
+    margin-left: 10px;
+    height: 160px;
+    box-shadow: -20px 20px 0px black;
+    width: 130px;
+  }
+  .cardCafe-content h2 {
+    font-size: 25px;
+  }
+
+  .btn-contacto {
+    font-size: 10px;
+  }
+  .textoServicio h2 {
+    font-size: 40px;
+  }
+  .textoServicio p {
+    width: 90%;
+    font-size: 15px;
+  }
+  .serviciosCards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .medios-card {
+    width: 100%;
+  }
+  .icon-container {
+    left: -50px;
+    top: 40px;
+    width: 150px;
+    right: 0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-container .imagen1 {
+    padding: 0;
+    margin: 0;
+    width: 60px;
+  }
+  .icon-container .imagen2 {
+    padding: 0;
+    margin: 0;
+    width: 90px;
+  }
+  .icon-container .imagen3 {
+    padding: 0;
+    margin: 0;
+    width: 80px;
+    height: 80px;
+  }
+  .serviciosCards {
+    margin-top: 20px;
+  }
+  .medios-card {
+    width: 250px;
+    height: 200px;
+    margin: 10px 0;
+  }
+  .content h2 {
+    font-size: 20px;
+  }
+  .content p {
+    width: 95%;
+    font-size: 15px;
+  }
+  .primero {
+    margin-bottom: 400px;
+  }
+  .diferencias {
+    width: 98%;
+    margin-top: 120px;
+  }
+
+  .diferencias .titulo {
+    font-size: 28px;
+    text-align: center;
+  }
+  .textosDif .tituloDif {
+    font-size: 13px;
+  }
+  .contenidoDif {
+    font-size: 12px;
+  }
+  .cardDif,
+  .cardTransparemte {
+    width: 45%;
+    height: 200px;
+    margin: 2px 2px;
+  }
+  .imagenDif img {
+    height: 40px;
+  }
+  .cardsDif {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+  .fondo {
+    left: -310px;
+    height: 100vh;
+    top: 570px;
+  }
+}

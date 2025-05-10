@@ -1,0 +1,27 @@
+<div class="swiper-container" [id]="idCarusel">
+    <div class="swiper-wrapper">
+        
+        <!-- Slide 2 -->
+        <div class="swiper-slide"*ngFor="let caso of casos">
+            <div class="contenido">
+                <div class="imagen">
+                    <img [src]=caso.imagen alt="Imagen 2">
+                </div>
+               
+                <div class="slide-content">
+                    <h2><b>{{caso.porcentaje}}</b></h2>
+                    <h4>{{caso.titulo}}</h4>
+                    <p>{{caso.subTitulo}}</p>
+                </div>
+            </div>
+           
+        </div>
+        
+        <!-- Agrega más slides según sea necesario -->
+    </div>
+    <!-- Paginación 
+    <div class="swiper-pagination"></div>-->
+    <!-- Botones de navegación -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>

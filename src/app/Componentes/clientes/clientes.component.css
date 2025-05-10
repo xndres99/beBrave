@@ -1,0 +1,27 @@
+.clientes{
+    width: 100%;
+    padding: 50px 0     ;
+    
+}
+.clientes .titulo{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    font-family: var(--font-family-prompt);
+    font-weight: var( --prompt-bold);
+    font-size: 60px;
+    line-height: 1;
+    color:  black ;
+    
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 800px) {
+    .clientes{
+        padding: 10px   0;
+        margin:     100px 0;
+    }
+
+}

@@ -1,0 +1,22 @@
+
+<div class="swiper-container" [id]="idCarusel">
+    <div class="swiper-wrapper">
+        
+        <!-- Slide 2 -->
+        <div class="swiper-slide" *ngFor="let marca of marcas">
+            <div class="contenido">
+               <img [src]="marca" alt="">
+                  
+            </div>
+           
+        </div>
+       
+        <!-- Agrega más slides según sea necesario -->
+    </div>
+    <!-- Paginación 
+    <div class="swiper-pagination"></div>-->
+    <!-- Botones de navegación 
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    -->
+</div>

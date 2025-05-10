@@ -1,0 +1,227 @@
+@import 'swiper/swiper-bundle.css';
+
+.swiper-container {
+  position: relative; /* Asegura que los botones estén dentro del carrusel */
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Evita que los elementos se salgan del contenedor */
+}
+  .swiper-slide {
+    display: flex;
+ 
+    
+   
+    height: 100%;
+    width: 100%;
+
+    justify-content: flex-end;
+
+  }
+
+  
+  .slide-content {
+   
+    
+    display: flex;
+    flex-direction: column;
+   
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+    
+   
+
+  }
+  .slide-content h2{
+    font-family: var(--font-family-prompt);
+    font-weight: var( --prompt-light);
+    line-height: 1;
+    font-size: 250px;
+    margin: 0;
+    padding: 0;
+    color: var(--background-color);
+    
+  }
+  .slide-content h4{
+    font-family: var(--font-family-prompt);
+    font-weight: var( --prompt-bold);
+    line-height: 1;
+    
+    color: var(--background-color);
+    margin: 0;
+    font-size: 30px;
+  
+  }
+  .slide-content p{
+    font-family: var(--font-family-prompt);
+    font-weight: var( --prompt-light);
+    line-height: 1;
+    font-size: 30px;
+    color: white;
+    margin: 0;
+  }
+  
+  .swiper-slide .imagen img {
+    
+    width: 250px;
+    height: auto;
+    
+  }
+  .swiper-slide .imagen{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+  }
+
+  .contenido{
+    margin-left: 200px;
+    margin-right: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+ 
+  
+  .swiper-pagination-bullet {
+    background: white;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    color: var(--background-color); /* Color de las flechas */
+  
+    width: 40px; /* Ancho de las flechas */
+    height: 100px; /* Alto de las flechas */
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Transición suave */
+    
+  }
+  .swiper-button-next {
+    right: 30px;
+  }
+  
+  .swiper-button-prev {
+    left: 30px;
+  }
+  
+  .swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro al pasar el mouse */
+  }
+  @media screen and (min-width: 480px) and (max-width: 800px) {
+    .contenido{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+
+    }
+    .contenido .image{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .swiper-slide .imagen{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height:auto;
+    }
+    
+    .slide-content {
+      height: 250px;
+      margin: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .slide-content h2{
+      width: 100%;
+      text-align: center;
+      font-size: 200px;
+    }
+    .slide-content h4{
+      width: 80%;
+      font-size: 20px;
+    }
+    .slide-content p{
+      width: 80%;
+      font-size: 18px;
+    }
+    .swiper-button-next {
+      right: 5px;
+    }
+    
+    .swiper-button-prev {
+      left: 5px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+      width: 20px; /* Ancho de las flechas */
+    height: 30px; /* Alto de las flechas */
+    }
+
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .contenido{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .swiper-slide .imagen{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height:auto;
+    }
+    
+    .slide-content {
+      height: 200px;
+      margin: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .slide-content h2{
+      width: 100%;
+      text-align: center;
+      font-size: 110px;
+    }
+    .slide-content h4{
+      width: 80%;
+      font-size: 20px;
+    }
+    .slide-content p{
+      width: 80%;
+      font-size: 18px;
+    }
+    .swiper-button-next {
+      right: 5px;
+    }
+    
+    .swiper-button-prev {
+      left: 5px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+      width: 20px; /* Ancho de las flechas */
+    height: 30px; /* Alto de las flechas */
+    }
+  }

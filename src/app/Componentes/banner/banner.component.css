@@ -1,0 +1,184 @@
+header {
+  width: 100%;
+
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+.primero {
+  width: 100%;
+
+  background-color: var(--background-color);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagen img {
+  height: 60vh;
+}
+.textos {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  height: 55vh;
+  justify-content: center;
+}
+.subTitulo {
+  font-family: var(--font-family-prompt);
+  font-weight: var(--prompt-bold);
+  font-size: 25px;
+  margin: 0;
+}
+.titulo {
+  font-family: var(--font-family-prompt);
+  font-weight: var(--prompt-bold);
+  font-size: 65px;
+  margin: 0;
+  color: white;
+  line-height: 1;
+  letter-spacing: 2px; /* Aumenta el espacio entre letras */
+}
+.btn-contacto {
+  background-color: #76b4b7; /* Color celeste del botón */
+  color: black; /* Color del texto */
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px; /* Bordes redondeados */
+  cursor: pointer;
+  position: relative;
+  box-shadow: 5px 5px 0px black; /* Sombra desplazada */
+  transition: all 0.2s ease-in-out;
+  width: 170px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-contacto:hover {
+  transform: translateY(-2px); /* Efecto al pasar el mouse */
+  box-shadow: 7px 7px 0px black;
+}
+.btn-contacto p {
+  font-family: var(--font-family-prompt);
+  font-weight: var(--prompt-extrabold);
+  font-size: 18px;
+  margin: 0;
+}
+.segundo {
+  background-color: var(--background-color);
+  width: 100%;
+  position: relative;
+}
+.segundo .texto {
+  margin-left: 80px;
+  font-family: var(--font-family-prompt);
+  font-weight: var(--prompt-medium);
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.segundo .seccion {
+  width: 90%;
+  background-color: black;
+  height: 200px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.segundo .seccion .estrategia {
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+}
+.segundo .seccion .estrategia img {
+  width: 200px;
+}
+
+.segundo .seccion .estrategia p {
+  color: white;
+  font-family: var(--font-family-prompt);
+  font-weight: var(--prompt-medium);
+  font-size: 18px;
+  margin-left: 30px;
+}
+.flama {
+  position: absolute;
+  top: 0; /* Ajusta la posición según necesites */
+  right: 0;
+  margin-right: 11%;
+  z-index: 999; /* Asegura que esté sobre los demás elementos */
+}
+.flama img {
+  width: 180px;
+}
+@media only screen and (max-width: 800px) {
+  .primero {
+    position: relative;
+    height: 35vh;
+    display: flex;
+    align-items: flex-start;
+
+    padding: 0;
+  }
+  .textos {
+    margin-left: 5px;
+    height: 100%;
+    width: 60%;
+    z-index: 100;
+    justify-content: flex-start;
+  }
+  .textos .subTitulo {
+    font-size: 15px;
+  }
+  .textos .titulo {
+    font-size: 30px;
+  }
+  .imagen img {
+    position: absolute;
+    height: 35vh;
+    right: -110px;
+    bottom: 0;
+    top: -20px;
+    z-index: 1;
+  }
+  .btn-contacto {
+    width: 80px;
+    height: 10px;
+  }
+  .btn-contacto p {
+    font-size: 15px;
+  }
+  .segundo .texto {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .segundo .seccion {
+    width: 95%;
+    height: 150px;
+  }
+
+  .segundo .seccion .estrategia {
+    margin-left: 10px;
+  }
+  .segundo .seccion .estrategia img {
+    width: 120px;
+  }
+  .segundo .seccion .estrategia p {
+   
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .segundo .flama{
+    visibility: hidden;
+  }
+}

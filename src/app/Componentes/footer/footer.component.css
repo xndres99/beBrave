@@ -1,0 +1,244 @@
+.cuerpo{
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.primero{
+    width: 100%;
+    margin: 10px 100px;
+    display: flex;
+   
+   
+}.cardCafe {
+    position: relative;
+    width: 280px;
+    height: 300px;
+    background-color: #6cbcc0; /* Color naranja */
+    border-radius: 15px;
+    box-shadow: 20px 20px 0px black; /* Sombra negra desplazada */
+    text-align: left;
+   
+
+}
+.cardCafe-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.cardCafe-content h2 {
+    font-family: var(--font-family-prompt);
+    font-weight: var( --prompt-extrabold);
+    font-size: 60px;
+    line-height: 1;
+    color: black;
+    margin: 0;
+
+}
+
+.btn-contacto {
+    font-family: var(--font-family-prompt);
+    font-weight: var( --prompt-medium);
+    background-color: #A02A64; /* Color morado */
+    color: white;
+    font-size: 18px;
+    
+    border: none;
+    padding: 8px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+ 
+}
+.patitos{
+   margin: 0;
+   padding: 0;
+   position: absolute;
+   right: 90px;
+   top: 10px;
+
+}
+.patitos img{
+    height: 470px;
+}
+.tituloFooter{
+    font-family: var(--font-family-prompt);
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+   
+}
+.negro p, .blanco p{
+    margin: 0;
+    padding: 0;line-height: 1.1;
+}
+.negro{
+    font-weight: var( --prompt-bold);
+    font-size: 65px;
+    letter-spacing: 5px; /* Espacio entre letras */
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.blanco{
+    font-weight: var( --prompt-extrabold);
+    font-size: 80px;
+    letter-spacing: 7px; /* Espacio entre letras */
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+  
+}
+.segundo{
+    width: 100%;
+    margin: 10px 0px;
+  
+    
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.redes p{
+    color: white;
+    font-size: 25px;
+    font-family: var(--font-family-prompt);
+    font-weight: var( --prompt-light);
+}
+.red{
+    display: flex;
+    height: 40px;
+}
+.red img{
+    margin:0 10px ;
+    cursor: pointer;
+}
+
+.red img:hover {
+    filter: invert(1) brightness(0.5);
+  }
+.copy{
+    position: absolute;
+    margin-right: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    right: 5px;
+   top: 10px;
+}
+.copy img{
+   width: 200px;
+}
+.copy p{
+    color: white;
+    font-size: 13px;
+    font-family: var(--font-family-prompt);
+    font-weight: var( --prompt-light);
+}
+.tercero {
+    width: 100%;
+    margin: 0;
+    font-size: 55px;
+    font-family: var(--font-family-prompt);
+    font-weight: var(--prompt-bold); /* Más grueso para que el borde se note */
+    color: transparent;
+    -webkit-text-stroke: 2px black; /* Contorno negro */
+    text-align: center; /* Centrado horizontalmente */
+    text-transform: lowercase; /* Para que se vea todo como en la imagen */
+  }
+
+  @media only screen and (max-width: 800px) {
+    .cardCafe {
+        margin-left: 10px;
+        height: 160px;
+        box-shadow: -20px 20px 0px black;
+        width: 130px;
+      }
+      .cardCafe-content h2 {
+        font-size: 25px;
+      }
+    
+      .btn-contacto {
+        font-size: 10px;
+        padding: 8px 20px;
+      }
+    .primero{
+        width: 100%;
+       
+        margin: 10px 10px;
+        flex-direction: column;
+    }
+    .segundo{
+        margin: 0; 
+    }
+    .tituloFooter{
+        margin-left: 10px;
+    }
+    .patitos{
+        right: -50px;
+
+    }
+    .patitos img{
+        height: 300px;
+    }
+    .tituloFooter{
+        margin-top: 30px;
+    }
+    .negro{
+        
+        font-size: 35px;
+        letter-spacing: 7px; /* Espacio entre letras */
+        margin-top: 0;
+        margin-bottom: 0;
+    
+    }
+    .blanco{
+       
+        font-size: 40px;
+        letter-spacing: 2px; /* Espacio entre letras */
+        margin-top: 0;
+        margin-bottom: 0;
+        color: white;
+      
+    }
+    .redes{
+        margin-left: 20px;
+       
+    }
+    .redes p{
+     
+        font-size:15px;
+       
+    }
+    .copy{
+        margin: 30px 0;
+        margin-top: 100px;
+    }
+    .tercero {
+        visibility: hidden;
+        font-size: 15px;
+    }
+    
+
+    .red{
+        display: flex;
+        height: 35px;
+        
+    }
+    .red img{
+        margin:0 8px ;
+        cursor: pointer;
+    }
+  }

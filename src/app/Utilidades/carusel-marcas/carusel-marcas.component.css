@@ -1,0 +1,114 @@
+@import 'swiper/swiper-bundle.css';
+
+.swiper-container {
+  position: relative; /* Asegura que los botones estén dentro del carrusel */
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Evita que los elementos se salgan del contenedor */
+}
+
+.swiper-wrapper{
+    margin:0 100px ;
+}
+  .swiper-slide {
+    display: flex;
+ 
+    
+   
+    height: 100%;
+    width: 100%;
+
+
+  }
+
+  
+  .slide-content {
+   
+    
+    display: flex;
+    flex-direction: column;
+   
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    margin-left: 2px;
+    
+  }
+  .slide-content h2{
+    font-family: var(--font-family-prompt);
+    font-weight: var( --prompt-light);
+    line-height: 1;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    color: var(--background-color);
+    
+  }
+  .slide-content h4{
+    font-family: var(--font-family-prompt);
+    font-weight: var( --prompt-bold);
+    line-height: 1;
+    
+    color: var(--background-color);
+    margin: 0;
+    font-size: 30px;
+  
+  }
+  .slide-content p{
+    font-family: var(--font-family-prompt);
+    font-weight: var( --prompt-light);
+    line-height: 1;
+    font-size: 30px;
+    color: white;
+    margin: 0;
+  }
+  
+
+  .contenido{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+    padding: 0;
+   
+    
+  }
+  .contenido img{
+    height: 80px;
+    min-width: 10px;
+    margin: 5px 1px;
+  }
+ 
+  
+  .swiper-pagination-bullet {
+    background: white;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    color: var(--background-color); /* Color de las flechas */
+  
+    width: 40px; /* Ancho de las flechas */
+    height: 100px; /* Alto de las flechas */
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Transición suave */
+    
+  }
+  .swiper-button-next {
+    right: 30px;
+  }
+  
+  .swiper-button-prev {
+    left: 30px;
+  }
+  
+  .swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro al pasar el mouse */
+  }
+  

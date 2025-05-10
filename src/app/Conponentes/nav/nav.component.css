@@ -1,0 +1,79 @@
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+}
+
+.lineas{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.linea{
+    width: 23.5%;
+    height: 20px;
+    
+}
+
+.navBar{
+    width: 100%;
+    
+    display: flex;
+    
+    justify-content: space-between;
+   
+   
+    padding: 15px 0;
+}
+.logo{
+    margin: 0 40px;
+}
+img{
+    width: 150px;
+    cursor: pointer;
+}
+img:hover{
+    scale: 1.1;
+}
+.botones{
+    margin: 0 40px;
+
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.boton{
+    text-decoration: none;
+    color: black;
+}
+.boton p, .botonC p{
+    font-family: var(--font-family-prompt);
+    font-weight: var(--prompt-light);
+    font-size: 15px;
+    cursor: pointer;
+}
+.boton p:hover,.botonC p:hover{
+    font-weight: var(--prompt-semibold);
+}
+.botonC{
+    
+    height: 30px;
+    padding: 2px 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.botonC:hover{
+    scale: 1.1;
+}
+
+@media only screen and (max-width: 800px) {
+    .botones{visibility: hidden;}
+}

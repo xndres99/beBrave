@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'swiper/swiper-bundle.css';
+
+body{
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+    
+}
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #FDB008;
+    --text-color: #333;
+
+
+    --font-family-prompt: "Prompt", sans-serif;
+
+  --prompt-thin: 100;
+  --prompt-light: 300;
+  --prompt-regular: 400;
+  --prompt-medium: 500;
+  --prompt-semibold: 600;
+  --prompt-bold: 700;
+  --prompt-extrabold: 800;
+  --prompt-black: 900;
+
+  }
+
+
+  .prompt-thin {
+    font-family: "Prompt", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .prompt-light {
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .prompt-regular {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .prompt-medium {
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .prompt-semibold {
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .prompt-bold {
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .prompt-extrabold {
+    font-family: "Prompt", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .prompt-black {
+    font-family: "Prompt", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .prompt-light-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+
+  html {
+    scroll-behavior: smooth;
+  }
+  

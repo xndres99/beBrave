@@ -1,0 +1,31 @@
+.marcas{
+    width: 100%;
+    height: 100px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.marcas .titulo{
+    width: 100%;
+    align-items: flex-start;
+    text-align: start;
+    justify-content: center;
+
+    font-family: var(--font-family-prompt);
+    font-weight: var( --prompt-medium);
+    font-size: 20px;
+    line-height: 1;
+    color:  black ;
+    margin-left: 100px;
+    
+   
+    
+}
+@media only screen and (max-width: 800px) {
+    .marcas .titulo{
+        margin-left: 10px; 
+    }
+}
