@@ -152,11 +152,11 @@ header {
     z-index: 1;
   }
   .btn-contacto {
-    width: 80px;
+    width: 90px;
     height: 10px;
   }
   .btn-contacto p {
-    font-size: 15px;
+    font-size: 10px;
   }
   .segundo .texto {
     font-size: 20px;
