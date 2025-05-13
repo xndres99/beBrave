@@ -20,11 +20,11 @@ export class CarouselComponent {
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-    this.casos=[new Casos(1, "assets/logo1.png", "341%", "OVERPERFORMANCE CTR", "nuevo sabor en categoría Bebidas alcohólicas en diferentes mercados a través de programática y redes sociales."),
+    this.casos=[new Casos(1, "assets/logo1.png", "341%", "OVERPERFORMANCE CTR", 'nuevo sabor en categoría "Bebidas alcohólicas" en diferentes mercados a través de programática y redes sociales.'),
       new Casos(1, "assets/logo2.png", "95%", "DE SUS VENTAS","alcanzadas con campañas Super Outlet diseñadas a medida"),
       new Casos(1, "assets/logo3.png", "100%", "DE CAMBIO DE PERSEPCIÓN DE MARCA","a través de branding y diseño estratégico"),
       new Casos(1, "assets/logo4.png", "200k$", "EN VENTAS CON LA CAMPAÑA OUTLET EN PANDEMIA",""),
-      new Casos(1, "assets/logo5.png", "90%", "DE LAS VENTAS GENERADAS","a travez de leads obtenidos en campañas estratégicas"),
+      new Casos(1, "assets/logo5.png", "90%", "DE LAS VENTAS GENERADAS","a través de leads obtenidos en campañas estratégicas"),
     ]
     
   }
