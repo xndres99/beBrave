@@ -17,9 +17,14 @@ export class FooterComponent {
   
   }
   irLinkenlin(){
-    window.open("https://www.linkedin.com/company/bebravead/", '_blank')
-  
+    
     
   }
 
+   
+
+    irWhatsApp(){
+window.open("https://bit.ly/BeBraveAd2025", '_blank')
+  
+    }
 }
