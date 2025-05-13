@@ -123,6 +123,7 @@
 .red img{
     margin:0 10px ;
     cursor: pointer;
+    height: 40px;
 }
 
 .red img:hover {
